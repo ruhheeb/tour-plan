@@ -6,9 +6,32 @@
     align-items: center
     justify-content: space-between
     padding: 40px 0
+    &__menu-button 
+      display: none
   &__search 
     margin-right: auto
     margin-left: 108px
+  &-bottom 
+    background-color: $bg-dark-color
+  &-menu 
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0
+    padding: 31px 0
+    list-style-type: none
+    color: $text-color-light
+    &__link 
+      color: inherit
+      font-weight: 700
+      font-size: 14px
+      line-height: 18px
+      text-decoration: none
+      text-transform: uppercase
+// block logo in block navbar-top
+.logo 
+  width: 177px
+
 // block search in block navbar-top
 .search 
   display: flex

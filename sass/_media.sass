@@ -1,0 +1,65 @@
+// media for 1200px
+@media (max-width: 1200px) 
+  .container 
+    max-width: 950px
+
+// media for 992px
+@media (max-width: 992px)  
+  .container 
+    max-width: 750px
+  .navbar 
+    &__search 
+      margin-left: auto
+      
+// responsive for 768px
+@media (max-width: 768px) 
+  .container 
+    max-width: 680px
+    width: 92%
+
+  .navbar 
+    &-top 
+      padding: 30px 0
+    &-menu 
+      padding: 23px 0
+      &__link 
+        font-weight: 700
+        font-size: 12px
+        line-height: 15px
+
+  .logo 
+    width: 132px
+
+  .search 
+    &__input 
+      width: 340px
+@media (max-width: 680px)
+  .container 
+    max-width: 590px
+    width: 92%
+  .navbar 
+    &__search, &-menu, &__user
+      display: none
+    &-top 
+      padding: 28px 0
+        
+  .menu 
+    &-button 
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-direction: column
+      padding: 0
+      width: 16px
+      height: 11px
+      border: none
+      background-color: $text-color-light
+      cursor: pointer
+      &__line 
+        width: 16px
+        height: 1px
+        background-color: $text-color-dark
+
+  .logo 
+    width: 99px
+
