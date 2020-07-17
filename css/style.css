@@ -563,7 +563,7 @@ template {
   line-height: 15px;
 }
 
-.stars {
+.hotel-stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
@@ -643,7 +643,7 @@ template {
 
 @media (max-width: 680px) {
   .container {
-    max-width: 590px;
+    max-width: 560px;
     width: 92%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
@@ -708,9 +708,9 @@ template {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .stars {
-    -ms-flex-preferred-size: content;
-        flex-basis: content;
+  .hotel-stars {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
