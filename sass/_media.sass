@@ -33,6 +33,11 @@
   .search 
     &__input 
       width: 340px
+
+  .hotel 
+    padding-bottom: 60px 
+
+// Responsive for 680px
 @media (max-width: 680px)
   .container 
     max-width: 590px
@@ -63,3 +68,21 @@
   .logo 
     width: 99px
 
+  .hotel 
+    padding-top: 5px 
+    padding-bottom: 40px 
+    &-info 
+      &__text  
+        flex-basis: 100% 
+      &__name 
+        flex-basis: 100% 
+        margin-top: 10px 
+      &__offer 
+        order: -1 
+        margin-left: 0 
+      &__rating 
+        display: none 
+    &-wrapper 
+      justify-content: space-between 
+  .stars 
+    flex-basis: content    
