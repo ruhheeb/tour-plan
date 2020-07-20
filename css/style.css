@@ -646,6 +646,10 @@ template {
   background-image: url(../img/arrow-next.svg);
 }
 
+.slider-button--next:focus {
+  outline: none;
+}
+
 .slider-button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
