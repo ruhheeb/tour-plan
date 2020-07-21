@@ -18,6 +18,7 @@ var mySwiper = new Swiper('.swiper-container', {
 // Yandex Map
 ymaps.ready(init);
 
+
 function init() {
   var myMap = new ymaps.Map('map', {
       center: [55.833065, 37.484954],
