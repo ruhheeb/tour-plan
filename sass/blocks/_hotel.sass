@@ -29,7 +29,17 @@
     line-height: 15px
   &-stars
     flex-basis: 100%
-
+  &-grid
+    display: flex
+    justify-content: space-between
+  &-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &-map
+    width: 347px
+    height: 213px
+    border-radius: 10px
 .offer
   padding: 4px 9px
   background-color: $primary-color
@@ -83,15 +93,84 @@
     background-position: center
     background-color: transparent
     cursor: pointer
+    &:focus
+      outline: none
     &--next
       right: 18px
       background-image: url(../img/arrow-next.svg)
-      &:focus
-        outline: none
     &--prev
       left: 18px
       background-image: url(../img/arrow-prev.svg)
+
 .swiper-slide
   &__wrapper
     width: 728px
     height: 450px
+
+.booking
+  padding: 28px
+  width: 350px
+  height: 210px
+  font-family: 'Nunito', sans-serif
+  background-color: $bg-dark-color
+  border-radius: 8px
+  color: $text-color-light
+  &-price
+    display: flex
+    justify-content: space-between
+    margin-bottom: 9px
+    &__wrapper
+      display: flex
+      flex-direction: column
+    &__start
+      font-weight: 400
+      font-size: 10px
+      line-height: 14px
+    &__pricetag
+      font-weight: 800
+      font-size: 24px
+      line-height: 33px
+    &__per-room
+      font-weight: 400
+      font-size: 12px
+      line-height: 16px
+    &__person
+      display: flex
+      flex-direction: column
+    &__user-info
+      margin-bottom: 8px
+    &__user-description
+      margin-left: 4px
+      font-weight: 400
+      font-size: 12px
+      line-height: 16px
+    &__home-info
+      display: flex
+      justify-content: space-between
+    &__home-description
+      align-self: flex-end
+      font-weight: 400
+      font-size: 12px
+      line-height: 16px
+  &__call-center
+    display: flex
+    justify-content: space-between
+    margin-bottom: 17px
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__call
+    color: inherit
+    text-decoration: none
+    cursor: pointer
+  &__button
+    width: 100%
+    min-height: 45px
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    background-color: $primary-color
+    border: none
+    border-radius: 4px
+    color: $text-color-light
+    cursor: pointer
