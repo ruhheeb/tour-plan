@@ -1,4 +1,5 @@
-var mySwiper = new Swiper('.hotel-slider', {
+// Hotel-slider
+var hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
   // keyboard control
@@ -15,7 +16,24 @@ var mySwiper = new Swiper('.hotel-slider', {
   effect: "fade"
 });
 
-// Yandex Map
+var hotelSlider = new Swiper('.reviews-slider', {
+  // Optional parameters
+  loop: true,
+  // keyboard control
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-slider__button--next',
+    prevEl: '.reviews-slider__button--prev',
+  },
+
+});
+
+
+// Yandex Map Javascript API
 ymaps.ready(init);
 
 
