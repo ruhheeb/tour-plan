@@ -582,6 +582,7 @@ template {
 }
 
 .hotel-slider {
+  margin: 0;
   width: 728px;
   height: 450px;
 }
@@ -900,6 +901,7 @@ template {
   background-color: #EC1F46;
   border: none;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .subscribe__button:focus {
