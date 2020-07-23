@@ -1,19 +1,19 @@
 // block header
 .navbar
   background-color: $text-color-light
-  &-top 
+  &-top
     display: flex
     align-items: center
     justify-content: space-between
     padding: 40px 0
-    &__menu-button 
+    &__menu-button
       display: none
-  &__search 
+  &__search
     margin-right: auto
     margin-left: 108px
-  &-bottom 
+  &-bottom
     background-color: $bg-dark-color
-  &-menu 
+  &-menu
     display: flex
     align-items: center
     justify-content: space-between
@@ -21,7 +21,7 @@
     padding: 31px 0
     list-style: none
     color: $text-color-light
-    &__link 
+    &__link
       color: inherit
       font-weight: 700
       font-size: 14px
@@ -29,17 +29,17 @@
       text-decoration: none
       text-transform: uppercase
 // block logo in block navbar-top
-.logo 
+.logo
   width: 177px
 
 // block search in block navbar-top
-.search 
+.search
   display: flex
   position: relative
   overflow: hidden
   border-radius: 6px
   height: 40px
-  &__input 
+  &__input
     width: 350px
     height: 100%
     padding-left: 23px
@@ -50,27 +50,31 @@
     font-weight: 400
     line-height: 15px
     color: $text-color-dark
-  &__button 
-      position: absolute
-      top: 0
-      right: 0
-      border: none
-      width: 65px
-      height: 100%
-      background-color: $primary-color
-      cursor: pointer
+    &:focus
+      outline: none
+  &__button
+    position: absolute
+    top: 0
+    right: 0
+    border: none
+    width: 65px
+    height: 100%
+    background-color: $primary-color
+    cursor: pointer
+    &:focus
+      outline: none
 
 // user block in block navbar-top
-.user 
+.user
   display: flex
   align-items: center
   text-decoration: none
-  &__avatar 
+  &__avatar
     width: 40px
     height: 40px
     border-radius: 50%
     object-fit: cover
-  &__name 
+  &__name
     margin-left: 18px
     font-weight: 400
     font-size: 14px

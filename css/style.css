@@ -443,6 +443,10 @@ template {
   color: #333333;
 }
 
+.search__input:focus {
+  outline: none;
+}
+
 .search__button {
   position: absolute;
   top: 0;
@@ -452,6 +456,10 @@ template {
   height: 100%;
   background-color: #EC1F46;
   cursor: pointer;
+}
+
+.search__button:focus {
+  outline: none;
 }
 
 .user {
@@ -805,6 +813,10 @@ template {
   cursor: pointer;
 }
 
+.booking__button:focus {
+  outline: none;
+}
+
 #map {
   width: 100%;
   height: 100%;
@@ -1147,6 +1159,10 @@ template {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.card__button:focus {
+  outline: none;
 }
 
 @media (max-width: 1200px) {
