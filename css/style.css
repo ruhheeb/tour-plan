@@ -865,6 +865,28 @@ template {
   overflow: hidden;
 }
 
+.packages-large__image-wrapper {
+  position: relative;
+}
+
+.packages-large__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.packages-large__offer {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  padding: 8px 11px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 0px 4px 4px 0px;
+}
+
 .packages-large__card {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -873,7 +895,6 @@ template {
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
   padding: 40px 33px;
-  border: 1px solid green;
   background-color: #0A223D;
   color: #ffffff;
 }
@@ -885,12 +906,15 @@ template {
 
 .packages-large__title {
   margin: 0;
+  margin-bottom: 27px;
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
 }
 
 .packages-large__text {
+  margin: 0;
+  margin-bottom: 34px;
   font-weight: 400;
   font-size: 14px;
   line-height: 160.6%;
@@ -900,6 +924,18 @@ template {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
+}
+
+.packages-large__previous {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.packages-large__pricetag {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .packages-button {
@@ -920,7 +956,53 @@ template {
   display: grid;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  border: 1px solid red;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.packages-medium__image-container {
+  min-height: 250px;
+  position: relative;
+}
+
+.packages-medium__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.packages-medium__offer {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  padding: 4px 9px;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.packages-medium__info-wrapper {
+  padding: 27px 26px;
+  background-color: #0A223D;
+  color: #ffffff;
+}
+
+.packages-medium__title {
+  margin: 0;
+  margin-bottom: 23px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.packages-medium__rooms {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .newsletter {
