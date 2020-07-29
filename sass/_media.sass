@@ -22,6 +22,10 @@
   .card
     min-width: 339px
     heigh: 255px
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
 
   .footer
     &-wrapper
@@ -162,8 +166,7 @@
     min-width: 280px
     height: 255px
     &__image
-      width: 100%
-      object-fit: cover
+      height: 100%
 
 // Responsive for 728px
 @media (max-width: 728px)
@@ -361,11 +364,12 @@
       flex-wrap: wrap
 
   .card
-    min-width: 100%
+    min-width: 255px
+    height: 255px
     &__image
-      max-width: 100%
-      heigh: 255px
+      height: 100%
       object-fit: cover
+
   .footer
     &-wrapper
       grid-template-columns: 1fr
@@ -404,6 +408,13 @@
   .container
     max-width: 500px
     width: 92%
+
+  .card
+    width: 100%
+    min-height: 255px
+    &__image
+      height: 100%
+      object-fit: cover
   .footer
     &-wrapper
       grid-template-columns: 1fr
