@@ -416,6 +416,10 @@ template {
   text-transform: uppercase;
 }
 
+.navbar-menu__item--mobile_visible {
+  display: none;
+}
+
 .logo {
   width: 177px;
 }
@@ -1406,7 +1410,7 @@ template {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  max-width: 255px;
+  min-width: 255px;
   height: 255px;
   border-radius: 6px;
   overflow: hidden;
@@ -1983,11 +1987,55 @@ template {
     max-width: 560px;
     width: 92%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 105px;
+  }
+  .navbar--mobile_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__search--mobile_hidden, .navbar__user--mobile_hidden {
     display: none;
+  }
+  .navbar__search--mobile_visible, .navbar__user--mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .navbar-top {
     padding: 28px 0;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile_visible {
+    display: block;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .menu-button {
     display: -webkit-box;
@@ -2014,6 +2062,11 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__name--light {
+    margin-top: 10px;
+    margin-left: 0;
+    color: #ffffff;
   }
   .logo {
     width: 99px;
@@ -2131,6 +2184,12 @@ template {
   }
   .card {
     min-width: 100%;
+  }
+  .card__image {
+    max-width: 100%;
+    heigh: 255px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .footer-wrapper {
     -ms-grid-columns: 1fr;
@@ -2291,6 +2350,10 @@ template {
   .container {
     max-width: 360px;
     width: 92%;
+  }
+  .search__input--mobile_resize {
+    max-width: 243px;
+    height: 40px;
   }
   .hotel-slider {
     height: 240px;
