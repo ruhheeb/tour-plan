@@ -70,7 +70,7 @@ $(document).ready(function () {
   var modalButton = $('[data-toggle="modal"]');
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
-  closeModalButton.on("click", closeModal)
+  closeModalButton.on("click", closeModal);
 
   function openModal() {
     var modalOverlay = $('.modal__overlay');
@@ -86,5 +86,10 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+
+  $(document).on('keydown', function (e) {
+    if (e.keyСode == 27);
+    closeModal(e);
+  });
 
 });

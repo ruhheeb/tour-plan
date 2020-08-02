@@ -42,7 +42,7 @@ img {
 .modal__message {
   padding: 18px 23px;
   width: 100%;
-  min-height: 123px;
+  height: 123px;
   resize: none;
   background-color: #ffffff;
   color: #BDBDBD;
