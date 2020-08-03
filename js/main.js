@@ -109,11 +109,15 @@ $(document).ready(function () {
           required: "Please enter a phone number.",
         },
         text: {
-          required: "Please enter a valid email adress"
-        }
+          required: "Please enter your email"
+        },
       },
     });
   });
 
+  // mask for number
+  $(document).ready(function () {
+    $('.phone_us').mask('7 (999) 999-99-99');
+  });
 
 });
