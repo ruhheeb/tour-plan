@@ -1228,12 +1228,18 @@ template {
   text-transform: uppercase;
 }
 
+#text-error {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  color: #EC1F46;
+}
+
 .subscribe {
   position: relative;
   width: 350px;
   height: 55px;
   border-radius: 4px;
-  overflow: hidden;
 }
 
 .subscribe__input {
@@ -1243,6 +1249,7 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  border-radius: 4px;
   border: none;
 }
 
@@ -1260,6 +1267,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   background-color: #EC1F46;
+  border-radius: 0 4px 4px 0;
   border: none;
   color: #ffffff;
   cursor: pointer;

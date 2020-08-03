@@ -92,6 +92,7 @@ $(document).ready(function () {
       closeModal(event);
   });
 
+  // validation forms
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
@@ -107,6 +108,9 @@ $(document).ready(function () {
         phone: {
           required: "Please enter a phone number.",
         },
+        text: {
+          required: "Please enter a valid email adress"
+        }
       },
     });
   });
