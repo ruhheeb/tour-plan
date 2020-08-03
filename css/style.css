@@ -64,6 +64,10 @@ img {
   outline: none;
 }
 
+.invalid {
+  color: #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1798,11 +1802,15 @@ template {
 }
 
 .modal__input {
-  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 .modal__message {
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__info {

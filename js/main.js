@@ -87,9 +87,20 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
   }
 
-  $(document).on('keydown', function (e) {
-    if (e.keyСode == 27);
-    closeModal(e);
+  $(document).on('keydown', function (event) {
+    if (event.code == 'Escape')
+      closeModal(event);
+  })
+
+  $('.form').validate({
+
+    messages: {
+      name: "Please specify your name",
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      }
+    }
   });
 
 });
