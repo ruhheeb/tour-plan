@@ -863,8 +863,12 @@
         <div class="footer__contact-form">
           <h3 class="footer__title">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form form">
-            <input type="text" placeholder="Your Full Name*" class="footer__input" name="name" required>
-            <input type="tel" placeholder="Phone Number*" class="footer__input" name="phone" required>
+            <div class="footer__input-group">
+              <input type="text" placeholder="Your Full Name*" class="footer__input" name="name" required>
+            </div>
+            <div class="footer__input-group">
+              <input type="tel" placeholder="Phone Number*" class="footer__input" name="phone" required>
+            </div>
             <textarea cols="30" rows="10" class="footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button">Send</button>
             <span class="footer__info">* Required Fields</span>
@@ -914,7 +918,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/jquery-3.5.1.min.js"></script>
-  <!-- <script src="js/jquery.validate.min.js"></script> -->
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/main.js"></script>

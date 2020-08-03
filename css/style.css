@@ -1670,9 +1670,7 @@ template {
 }
 
 .footer__input {
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
-  margin-bottom: 15px;
+  width: 100%;
   padding: 0 23px;
   height: 50px;
   font-weight: 400;
@@ -1686,6 +1684,15 @@ template {
 
 .footer__input:focus {
   outline: none;
+}
+
+.footer__input-group {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  margin-bottom: 15px;
 }
 
 .footer__message {
@@ -1914,7 +1921,7 @@ template {
   .footer__link--mb-2 {
     margin-right: 10px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
@@ -2003,7 +2010,7 @@ template {
     -ms-grid-row: 7;
     grid-row: 7;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
@@ -2461,7 +2468,7 @@ template {
   .footer__bottom-wrapper {
     margin-bottom: 10px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }

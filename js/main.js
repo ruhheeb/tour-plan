@@ -90,17 +90,26 @@ $(document).ready(function () {
   $(document).on('keydown', function (event) {
     if (event.code == 'Escape')
       closeModal(event);
-  })
-
-  $('.form').validate({
-
-    messages: {
-      name: "Please specify your name",
-      email: {
-        required: "We need your email address to contact you",
-        email: "Your email address must be in the format of name@domain.com"
-      }
-    }
   });
+
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please enter your name.",
+          minlength: "The name must be at least 5 characters.",
+        },
+        email: {
+          required: "We need your email address to contact you.",
+          email: "Please enter a valid email adress.",
+        },
+        phone: {
+          required: "Please enter a phone number.",
+        },
+      },
+    });
+  });
+
 
 });
