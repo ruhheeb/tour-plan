@@ -68,6 +68,10 @@ img {
   color: #EC1F46;
 }
 
+iframe {
+  border: none;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -472,6 +476,8 @@ template {
 
 .logo {
   width: 177px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .search {
@@ -882,11 +888,6 @@ template {
   outline: none;
 }
 
-#map {
-  width: 100%;
-  height: 100%;
-}
-
 .packages {
   padding: 40px 0 70px;
 }
@@ -982,12 +983,15 @@ template {
 .packages-large__text {
   margin: 0;
   margin-bottom: 34px;
+  width: 299px;
+  height: 165px;
   font-weight: 400;
   font-size: 14px;
   line-height: 160.6%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  overflow: auto;
 }
 
 .packages-large__rooms {
@@ -1054,7 +1058,7 @@ template {
 
 .packages-button {
   width: 120px;
-  height: 40px;
+  min-height: 40px;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -1552,6 +1556,8 @@ template {
   -ms-grid-row-span: 3;
   grid-row: 1 / 4;
   height: 192px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .footer__logo-block--marginb-3 {
