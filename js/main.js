@@ -34,32 +34,6 @@ $(document).ready(function () {
   });
 
 
-  // Yandex Map Javascript API
-  // ymaps.ready(init);
-
-
-  // function init() {
-  //   var myMap = new ymaps.Map('map', {
-  //       center: [55.833065, 37.484954],
-  //       zoom: 18
-  //     }, {
-  //       searchControlProvider: 'yandex#search'
-  //     }),
-  //     myPlacemark = new ymaps.Placemark(myMap.getCenter());
-
-  //   myMap.geoObjects.add(myPlacemark);
-
-  //   myPlacemark.events
-  //     .add('mouseenter', function (e) {
-  //       // Ссылку на объект, вызвавший событие,
-  //       // можно получить из поля 'target'.
-  //       e.get('target').options.set('preset', 'islands#greenIcon');
-  //     })
-  //     .add('mouseleave', function (e) {
-  //       e.get('target').options.unset('preset');
-  //     });
-  // }
-
   var menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener('click', function () {
     console.log('Клик по кнопе меню');
@@ -73,6 +47,7 @@ $(document).ready(function () {
   closeModalButton.on("click", closeModal);
 
   function openModal() {
+    console.log($(this).attr("data-href"));
     var modalOverlay = $('.modal__overlay');
     var modalDialog = $('.modal__dialog');
     modalOverlay.addClass("modal__overlay--visible");
@@ -122,4 +97,18 @@ $(document).ready(function () {
 
   // initialize AOS animate
   AOS.init();
+
+
+  $(function () {
+    var hotelMap = $('#map');
+    var hotelMapTop = hotelMap.offset().top;
+    $(window).bind('scroll', function () {
+      var windowTop = $(this).scrollTop();
+      if (windowTop > hotelMapTop) {
+        $('#map').html('<iframe class="map"src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.8592242905584!2d43.32248629739441!3d38.44472050737955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4012771c021d3025%3A0x3ca87d16df84400c!2sDoubleTree%20by%20Hilton%20Hotel%20Van!5e0!3m2!1sen!2s!4v1596561857194!5m2!1sen!2s"height = "213" allowfullscreen = "" aria - hidden="false" tabindex = "0" ></iframe >')
+        $(window).unbind('scroll');
+      }
+    });
+  });
+
 });

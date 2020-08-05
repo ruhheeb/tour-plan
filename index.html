@@ -225,14 +225,13 @@
             </div>
             <!-- /.call-center-->
 
-            <button data-toggle="modal" class="button booking__button">View Other Options</button>
+            <button data-toggle="modal" data-href="#booking-modal" class="button booking__button">View Other
+              Options</button>
           </div>
           <!-- /.booking -->
 
-          <div class="hotel-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.8592242905584!2d43.32248629739441!3d38.44472050737955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4012771c021d3025%3A0x3ca87d16df84400c!2sDoubleTree%20by%20Hilton%20Hotel%20Van!5e0!3m2!1sen!2s!4v1596561857194!5m2!1sen!2s"
-              width="100%" height="213" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <div class="hotel-map" id="map">
+
           </div>
           <!-- /.hotel-map -->
 
@@ -700,14 +699,14 @@
           <img src="img/activities/activities-image-1.jpg" alt="Photo: The curious corner of chamarel"
             class="card__image">
           <h3 class="card__title">The curious corner of chamarel</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" data-href="#activities-modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
 
         <div class="card activities__card" data-aos="zoom-in" data-aos-duration="500">
           <img src="img/activities/activities-image-2.jpg" alt="Photo: Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf course</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" data-href="#activities-modal" class=" card__button">Book Now</button>
         </div>
         <!-- /.card -->
 
@@ -715,7 +714,7 @@
           <img src="img/activities/activities-image-3.jpg" alt="Photo: Tamarind falls hiking trip - full day"
             class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" data-href="#activities-modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
 
@@ -723,7 +722,7 @@
           <img src="img/activities/activities-image-4.jpg" alt="Photo: The blue marine discovery quest"
             class="card__image">
           <h3 class="card__title">The curious corner of chamarel</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" data-href="#activities-modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
 
@@ -898,7 +897,28 @@
   </footer>
   <!-- /.footer -->
 
-  <div class="modal">
+  <div class="modal" id="booking-modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/modal/close.svg" alt="Icon: close">
+      </a>
+      <h3 class="modal__title">Booking</h3>
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" placeholder="Your Full Name*" class="modal__input" name="name" required>
+        <input type="tel" placeholder="Phone Number*" class="modal__input phone_us" name="phone" required>
+        <input type="email" placeholder="Email*" class="modal__input" name="email" required>
+        <textarea cols="30" rows="10" class="modal__message" placeholder="Message" name="message"></textarea>
+        <button class="button modal__button">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      </form>
+
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <div class="modal" id="activities-modal">
     <div class="modal__overlay"></div>
     <div class="modal__dialog">
       <a href="#" class="modal__close">
