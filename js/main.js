@@ -98,7 +98,6 @@ $(document).ready(function () {
 
   // initialize AOS animate
 
-
   $(function () {
     var hotelMap = $('.hotel-second');
     var hotelMapTop = hotelMap.offset().top;
@@ -110,8 +109,5 @@ $(document).ready(function () {
       }
     });
   });
-
-
-
 
 });
