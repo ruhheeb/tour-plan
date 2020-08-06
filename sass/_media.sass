@@ -129,6 +129,31 @@
     &__input
       &-group
         flex-basis: 47%
+  .modal
+    &__dialog
+      padding: 26px 60px
+
+// reponsive for 900
+@media (max-width: 900px)
+  .modal
+    &__dialog
+      padding: 26px 60px
+    &__message
+      margin-bottom: 5px
+    &__button
+      order: 2
+    &__info
+      flex-basis: 100%
+
+// reponsive for 800
+@media (max-width: 800px)
+  .modal
+    &__dialog
+      padding: 26px 50px
+    &__button
+      width: 140px
+      height: 50px
+
 // responsive for 768px
 @media (max-width: 768px)
   .container, .newsletter-wrapper
@@ -169,6 +194,14 @@
     height: 255px
     &__image
       height: 100%
+  .modal
+    &__dialog
+      padding: 26px 60px
+    &__input
+      padding: 0 20px
+      height: 40px
+    &__message
+      height: 90px
 
 // Responsive for 728px
 @media (max-width: 728px)
@@ -449,6 +482,14 @@
         flex-basis: 100%
     &__message
       flex-basis: 100%
+  .modal
+    &__dialog
+      padding: 30px 40px
+    &__message
+      height: 70px
+    &__button
+      width: 120px
+      height: 35px
 // responsive for 500
 @media (max-width: 500px)
   .container
@@ -472,6 +513,15 @@
   .card
     width: 100%
     heght: 255px
+  .modal
+    &__dialog
+      padding: 20px 35px
+// responsive for 450
+@media (max-width: 450)
+  .modal
+    &__dialog
+      padding: 26px 60px
+
 // responsive for 400
 @media (max-width: 400px)
   .container

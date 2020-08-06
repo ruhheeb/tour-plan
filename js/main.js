@@ -60,6 +60,7 @@ $(document).ready(function () {
     var modalDialog = $('.modal__dialog');
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
+    body.style.overflow = 'hidden'
   }
 
   $(document).on('keydown', function (event) {
@@ -96,19 +97,21 @@ $(document).ready(function () {
   });
 
   // initialize AOS animate
-  AOS.init();
 
 
   $(function () {
-    var hotelMap = $('#map');
+    var hotelMap = $('.hotel-second');
     var hotelMapTop = hotelMap.offset().top;
-    $(window).bind('scroll', function () {
+    $(document).bind('scroll', function () {
       var windowTop = $(this).scrollTop();
       if (windowTop > hotelMapTop) {
-        $('#map').html('<iframe class="map"src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.8592242905584!2d43.32248629739441!3d38.44472050737955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4012771c021d3025%3A0x3ca87d16df84400c!2sDoubleTree%20by%20Hilton%20Hotel%20Van!5e0!3m2!1sen!2s!4v1596561857194!5m2!1sen!2s"height = "213" allowfullscreen = "" aria - hidden="false" tabindex = "0" ></iframe >')
-        $(window).unbind('scroll');
+        $('#map').html('<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.3489174168453!2d28.965195639114885!3d41.039498256852404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab75a3b968323%3A0xc7ab684fa5cfea41!2sDoubleTree%20by%20Hilton%20Hotel%20Istanbul%20-%20Piyalepasa!5e0!3m2!1sen!2s!4v1596656813032!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>')
+        $(document).unbind('scroll');
       }
     });
   });
+
+
+
 
 });
