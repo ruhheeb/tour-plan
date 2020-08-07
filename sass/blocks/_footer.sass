@@ -1,5 +1,5 @@
 .footer
-  padding: 108px 0 46px
+  padding: 108px 0 98px
   background-color: $bg-dark-color
   color: $text-color-light
   &-wrapper
@@ -9,7 +9,6 @@
     grid-auto-rows: minmax(40px, min-content)
   &__logo-block
     grid-row: 1 / 4
-    height: 192px
     text-decoration: none
     cursor: pointer
     &--marginb-3
@@ -22,6 +21,8 @@
       grid-column: span 2
       display: flex
       align-content: center
+  &__legal
+    justify-self: end
     &-links
       display: flex
       min-width: 83px
@@ -29,6 +30,8 @@
   &__contact
     &-details
       grid-column: span 2
+      &--mb-top
+        margin-top: 10px
     &-form
       grid-column: span 2
   &__form
@@ -37,24 +40,35 @@
     justify-content: space-between
     flex-wrap: wrap
   &__text
-    margin: 0 0 20px 0
+    margin: 0 0 25px 0
     font-weight: 400
     font-size: 14px
     line-height: 160%
     color: $text-color-soft
   &__bottom
+    grid-row: 6 / 7
     grid-column: 2 / 5
     display: flex
     align-items: center
     justify-content: space-between
     &-wrapper
-      margin: 0 220px 0 auto
+      margin: 0 265px 0 auto
+    &-link
+      font-weight: 400
+      font-size: 12px
+      line-height: 15px
+      color: $text-color-soft
+      text-decoration: none
+      &--mb-2
+        margin-right: 15px
   &__title
-    margin: 0 0 16px 0
+    margin: 0 0 20px 0
     font-weight: 700
     font-size: 18px
     line-height: 23px
     text-transform: uppercase
+    &--contact-size
+      margin-bottom: 35px
     &--inline
       margin: 0 43px 0 0
   &__ul
@@ -71,15 +85,17 @@
     &--marginb-2
       margin-bottom: 20px
   &__icon-wrapper
-    min-width: 40px
+    min-width: 30px
   &__link
     flex-basis: 100%
     font-size: 14px
     line-height: 160%
     color: $text-color-soft
     text-decoration: none
-    &--mb-2
-      margin-right: 20px
+    &--mr-5
+      margin-right: 5px
+    &--mb-3
+
   &__input
     width: 100%
     padding: 0 23px
